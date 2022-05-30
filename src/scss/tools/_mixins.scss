@@ -1,0 +1,27 @@
+//// CLASSES GENERATOR ////
+//
+// This mixin defines a set of classes associated with the properties/values sent to it as a parameters.
+//
+// @param $propsMap [Map] Map of properties to set (example: ("bgc": "background-color").
+// @param $valuesMap [Map] Map of values to set (example: ("primary": #FF0056).
+//
+// @return
+//     Example: `
+//         .bcg--primary: {
+//             background-color: #FF0056 !important;
+//         }
+//     `
+//
+@mixin classesGenerator($propsMap, $valuesMap) {
+  @debug $propsMap, $valuesMap;
+  // LOOP ON PROPS MAP
+  @each $prefix, $property in $propsMap {
+    // LOOP ON VALUES MAP
+    @each $key, $value in $valuesMap {
+      // GENERATE CLASS
+      .#{ $prefix }--#{ $key } {
+        #{ $property }: $value !important;
+      }
+    }
+  }
+}

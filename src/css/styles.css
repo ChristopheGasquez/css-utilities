@@ -1,0 +1,43 @@
+:root {
+  --light: #fff;
+  --dark: #000;
+  --primary: #51b472;
+  --secondary: #157e82;
+  --tertiary: #533e92;
+  --info: #19528b;
+  --success: #1b902e;
+  --warning: #cd5a00;
+  --danger: #630000;
+  --default: #666666;
+  --shade-100: #e6e6e6;
+  --shade-200: #cccccc;
+  --shade-300: #b3b3b3;
+  --shade-400: #999999;
+  --shade-500: gray;
+  --shade-600: #666666;
+  --shade-700: #4d4d4d;
+  --shade-800: #333333;
+  --shade-900: #1a1a1a; }
+
+:root {
+  --font-family: hevetica, verdana, arial; }
+
+:root {
+  --container-xs: 375px;
+  --container-sm: 650px;
+  --container-md: 820px;
+  --container-lg: 1180px;
+  --container-xl: 1400px;
+  --container: 820px;
+  --font-size-xs: 0.5rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+  --font-size: 1rem;
+  --gap-xs: 0.5rem;
+  --gap-sm: 1rem;
+  --gap-md: 1.5rem;
+  --gap-lg: 2rem;
+  --gap-xl: 3rem;
+  --gap: 1.5rem; }

@@ -1,0 +1,21 @@
+//// MAP COLLECT ////
+// This function returns a map by merging the maps received as parameters.
+//
+// @params $maps [...Map] List of maps to merge into the map returned (example: ("primary": blue), ("secondary": green)).
+//
+// @return
+//     Example: `
+//         ("primary": blue, "secondary": green)
+//     `
+//
+@function mapCollect($maps...) {
+  // SET COLLECTION TO RETURN
+  $collection: ();
+  // LOOP ON MAPS
+  @each $map in $maps {
+    // MARGE COLLECTION WITH CURRENT MAP
+    $collection: map_merge($collection, $map);
+  }
+  // RETURN MERGED MAPS;
+  @return $collection;
+}

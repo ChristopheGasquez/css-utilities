@@ -1,0 +1,86 @@
+//////// SCSS VARIABLES ////////
+
+//// CONTAINERS ////
+$container-xs: 375px !default;
+$container-sm: 650px !default;
+$container-md: 820px !default;
+$container-lg: 1180px !default;
+$container-xl: 1400px !default;
+$container: $container-md !default;
+
+//// FONTS ////
+$font-size-xs: .5rem !default;
+$font-size-sm: .75rem !default;
+$font-size-md: 1rem !default;
+$font-size-lg: 2rem !default;
+$font-size-xl: 3rem !default;
+$font-size: $font-size-md !default;
+
+//// GAPS ////
+$gap-xs: .5rem !default;
+$gap-sm: 1rem !default;
+$gap-md: 1.5rem !default;
+$gap-lg: 2rem !default;
+$gap-xl: 3rem !default;
+$gap: $gap-md !default;
+
+//////// CUSTOM PROPERTIES ////////
+:root {
+
+  //// CONTAINERS ////
+  --container-xs: #{$container-xs};
+  --container-sm: #{$container-sm};
+  --container-md: #{$container-md};
+  --container-lg: #{$container-lg};
+  --container-xl: #{$container-xl};
+  --container: #{$container};
+
+  //// FONTS ////
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size: #{$font-size};
+
+  //// GAPS ////
+  --gap-xs: #{$gap-xs};
+  --gap-sm: #{$gap-sm};
+  --gap-md: #{$gap-md};
+  --gap-lg: #{$gap-lg};
+  --gap-xl: #{$gap-xl};
+  --gap: #{$gap};
+}
+
+//////// SIZE LIST ////////
+
+//// CONTAINER LIST ////
+$container-sizes: (
+  "container-xs": var(--container-xs),
+  "container-sm": var(--container-sm),
+  "container-md": var(--container-md),
+  "container-lg": var(--container-lg),
+  "container-xl": var(--container-xl),
+  "container": var(--container),
+);
+
+//// FONT LIST ////
+$font-size-list: (
+  "font-size-xs": var(--font-size-xs),
+  "font-size-sm": var(--font-size-sm),
+  "font-size-md": var(--font-size-md),
+  "font-size-lg": var(--font-size-lg),
+  "font-size-xl": var(--font-size-xl),
+  "font-size": var(--font-size),
+);
+
+//// GAP LIST ////
+$gap-list: (
+  "gap-xs": var(--gap-xs),
+  "gap-sm": var(--gap-sm),
+  "gap-md": var(--gap-md),
+  "gap-lg": var(--gap-lg),
+  "gap-xl": var(--gap-xl),
+  "gap": var(--gap),
+);
+

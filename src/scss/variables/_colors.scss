@@ -1,0 +1,88 @@
+//////// SCSS VARIABLES ////////
+
+//// MAIN COLORS ////
+$light: #fff !default;
+$dark: #000 !default;
+$primary: #51b472 !default;
+$secondary: #157e82 !default;
+$tertiary: #533e92 !default;
+
+//// STATUS COLORS ////
+$info: #19528b !default;
+$success: #1b902e !default;
+$warning: #cd5a00 !default;
+$danger: #630000 !default;
+$default: #666666 !default;
+
+//// LIGHT TO DARK SHADES ////
+$shade-100: lighten($dark, 90%) !default;
+$shade-200: lighten($dark, 80%) !default;
+$shade-300: lighten($dark, 70%) !default;
+$shade-400: lighten($dark, 60%) !default;
+$shade-500: lighten($dark, 50%) !default;
+$shade-600: lighten($dark, 40%) !default;
+$shade-700: lighten($dark, 30%) !default;
+$shade-800: lighten($dark, 20%) !default;
+$shade-900: lighten($dark, 10%) !default;
+
+//////// CUSTOM PROPERTIES ////////
+:root {
+
+  //// MAIN COLORS ////
+  --light: #{$light};
+  --dark: #{$dark};
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --tertiary: #{$tertiary};
+
+  //// STATUS PROPERTIES ////
+  --info: #{$info};
+  --success: #{$success};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --default: #{$default};
+
+  //// LIGHT TO DARK SHADES ////
+  --shade-100: #{$shade-100};
+  --shade-200: #{$shade-200};
+  --shade-300: #{$shade-300};
+  --shade-400: #{$shade-400};
+  --shade-500: #{$shade-500};
+  --shade-600: #{$shade-600};
+  --shade-700: #{$shade-700};
+  --shade-800: #{$shade-800};
+  --shade-900: #{$shade-900};
+}
+
+/////// COLOR LISTS ////////
+
+//// MAIN LIST ////
+$main-colors: (
+  "light": var(--light),
+  "dark": var(--dark),
+  "primary": var(--primary),
+  "secondary": var(--secondary),
+  "tertiary": var(--tertiary),
+);
+
+//// STATUS LIST ////
+$status-colors: (
+  "info": var(--info),
+  "success": var(--success),
+  "warning": var(--warning),
+  "danger": var(--danger),
+  "default": var(--default),
+);
+
+//// SHADE LIST ////
+$shade-colors: (
+  "shade-100": var(--shade-100),
+  "shade-200": var(--shade-200),
+  "shade-300": var(--shade-300),
+  "shade-400": var(--shade-400),
+  "shade-500": var(--shade-500),
+  "shade-600": var(--shade-600),
+  "shade-700": var(--shade-700),
+  "shade-800": var(--shade-800),
+  "shade-900": var(--shade-900),
+);
