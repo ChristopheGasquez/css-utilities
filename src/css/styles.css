@@ -20,15 +20,24 @@
   --shade-900: #1a1a1a; }
 
 :root {
+  --font-family-primary: hevetica;
+  --font-family-secondary: verdana;
+  --font-family-tertiary: arial;
   --font-family: hevetica, verdana, arial; }
 
 :root {
+  --border-size-xs: 0.1rem;
+  --border-size-sm: 0.2rem;
+  --border-size-md: 0.4rem;
+  --border-size-lg: 0.7rem;
+  --border-size: 0.4rem;
   --container-xs: 375px;
   --container-sm: 650px;
   --container-md: 820px;
   --container-lg: 1180px;
   --container-xl: 1400px;
   --container: 820px;
+  --container-full: 100%;
   --font-size-xs: 0.5rem;
   --font-size-sm: 0.75rem;
   --font-size-md: 1rem;
@@ -41,3 +50,9 @@
   --gap-lg: 2rem;
   --gap-xl: 3rem;
   --gap: 1.5rem; }
+
+.bgc--red {
+  background-color: red !important; }
+
+.bgc--blue {
+  background-color: blue !important; }

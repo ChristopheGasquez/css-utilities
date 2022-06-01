@@ -10,10 +10,15 @@ $font-family: $font-family-primary, $font-family-secondary, $font-family-tertiar
 :root {
 
   //// FONT FAMILY ////
+  --font-family-primary: #{$font-family-primary};
+  --font-family-secondary: #{$font-family-secondary};
+  --font-family-tertiary: #{$font-family-tertiary};
   --font-family: #{$font-family};
 }
 
 //////// FONT LIST ////////
+
+//// FONT FAMILY LIST ////
 $font-families: (
   "primary": var(--font-family-primary),
   "secondary": var(--font-family-secondary),

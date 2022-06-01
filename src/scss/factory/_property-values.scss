@@ -1,0 +1,70 @@
+//////// CSS PROPERTY VALUES ////////
+
+//// A ////
+$align-content-values: (center, flex-start, flex-end, space-between, space-around, stretch, initial, inherit);
+$align-items-values: (baseline, center, flex-start, flex-end, stretch, initial, inherit);
+$align-self-values: (auto, baseline, center, flex-start, flex-end, stretch, initial, inherit);
+$animation-direction-values: (normal, reverse, alternate, alternate-reverse, initial, inherit);
+$animation-fill-mode-values: (none, forwards, backwards, both, initial, inherit);
+$animation-play-state-values: (paused, running, initial, inherit);
+$animation-timing-function-values: (linear, ease, ease-in, ease-out, ease-in-out, initial, inherit);
+//// B ////
+$backface-visibility-values: (visible, hidden, initial, inherit);
+$background-attachment-values: (scroll, fixed, initial, inherit);
+$background-clip-values: (border-box, padding-box, content-box, initial, inherit);
+$background-origin-values: (border-box, padding-box, content-box, initial, inherit);
+$background-repeat-values: (repeat, repeat-x, repeat-y, no-repeat, initial, inherit);
+$border-style-values: (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit);
+$box-sizing-values: (content-box, padding-box, border-box, initial, inherit);
+//// C ////
+$caption-side-values: (top, bottom, initial, inherit);
+$clear-values: (left, right, auto, both, none, initial, inherit);
+$column-fill-values: (auto, balance, initial, inherit);
+$column-rule-style-values: (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit);
+$column-span-values: (none, all, initial, inherit);
+$content-values: (normal, none, counter, open-quote, close-quote, no-open-quote, no-close-quote, initial, inherit);
+$cursor-values: (auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, not-allowed, grab, grabbing, e-resize, n-resize, ne-resize, nw-resize, s-resize, se-resize, sw-resize, w-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, col-resize, row-resize, all-scroll, zoom-in, zoom-out, initial, inherit);
+//// D ////
+$direction-values: (ltr, rtl, initial, inherit);
+$display-values: (inline, block, contents, flex, flow, flow-root, grid, inline-block, inline-flex, inline-grid, inline-table, list-item, run-in, table, table-caption, table-column-group, table-header-group, table-footer-group, table-row-group, table-cell, table-column, table-row, none, initial, inherit);
+//// E ////
+$empty-cells-values: (show, hide, initial, inherit);
+//// F ////
+$flex-direction-values: (row, row-reverse, column, column-reverse, initial, inherit);
+$flex-wrap-values: (nowrap, wrap, wrap-reverse, initial, inherit);
+$float-values: (left, right, none, initial, inherit);
+//// J ////
+$justify-content-values: (flex-start, flex-end, center, space-between, space-around, initial, inherit);
+//// L ////
+$list-style-position-values: (inside, outside, initial, inherit);
+$list-style-type-values: (disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha, upper-alpha, none, initial, inherit);
+//// O ////$
+$outline-style-values: (none, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit);
+$overflow-values: (auto, hidden, scroll, visible, initial, inherit);
+//// P ////
+$page-break-after-values: (auto, always, avoid, left, right, initial, inherit);
+$page-break-before-values: (auto, always, avoid, left, right, initial, inherit);
+$page-break-inside-values: (auto, avoid, initial, inherit);
+$position-values: (static, relative, absolute, fixed, sticky, initial, inherit);
+//// R ////
+$resize-values: (none, both, horizontal, vertical, initial, inherit);
+//// T ////
+$table-layout-values: (auto, fixed, initial, inherit);
+$text-align-values: (left, right, center, justify, initial, inherit);
+$text-align-last-values: (auto, start, end, left, right, center, justify, initial, inherit);
+$text-decoration-values: (none, underline, overline, line-through, blink, initial, inherit);
+$text-decoration-line-values: (none, underline, overline, line-through, blink, initial, inherit);
+$text-decoration-style-values: (solid, double, dotted, dashed, wavy, initial, inherit);
+$text-justify-values: (auto, none, inter-word, distribute, initial, inherit);
+$text-overflow-values: (clip, ellipsis, initial, inherit);
+$text-transform-values: (capitalize, lowercase, none, uppercase, initial, inherit);
+$transform-style-values: (flat, preserve-3d, initial, inherit);
+//// U ////
+$unicode-bidi-values: (bidi-override, embed, normal, initial, inherit);
+//// V ////
+$vertical-align-values: (baseline, sub, super, top, text-top, middle, bottom, text-bottom initial, inherit);
+$visibility-values: (visible, hidden, collapse, initial, inherit);
+//// W ////
+$white-space-values: (normal, pre, nowrap, pre-line, pre-wrap, initial, inherit);
+$word-break-values: (normal, break-all, keep-all, initial, inherit);
+$word-wrap-values: (normal, break-word, initial, inherit);

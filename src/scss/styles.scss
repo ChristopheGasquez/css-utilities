@@ -1,3 +1,8 @@
 // GLOBALS IMPORTS
 @import "tools/index";
 @import "variables/index";
+
+$background-color-k: ("bgc": background-color);
+@include classesGenerator($background-color-k, fromListToMap(("red", blue)));
+
+

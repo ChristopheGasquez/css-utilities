@@ -1,3 +1,25 @@
+//// FROM LIST TO MAP ////
+// This function returns a map whose keys / values ​​correspond to the values ​​of the list received as parameter.
+//
+// @params $list [List] List used to return the map created (example: ("blue", red, green)).
+//
+// @return
+//     Example: `
+//         ("blue": blue, "red": red, "green": green)
+//     `
+//
+@function fromListToMap($list) {
+  // SET MAP TO RETURN
+  $map: ();
+  // LOOP ON LIST
+  @each $item in $list {
+    // MERGE MAP WHIT CURRENT LIST TRANSFORMED HAS A MAP
+    $map: map_merge($map, ("#{$item}": #{$item}));
+  }
+  // RETURN MAP
+  @return $map;
+}
+
 //// MAP COLLECT ////
 // This function returns a map by merging the maps received as parameters.
 //
@@ -13,7 +35,7 @@
   $collection: ();
   // LOOP ON MAPS
   @each $map in $maps {
-    // MARGE COLLECTION WITH CURRENT MAP
+    // MERGE COLLECTION WITH CURRENT MAP
     $collection: map_merge($collection, $map);
   }
   // RETURN MERGED MAPS;

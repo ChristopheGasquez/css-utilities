@@ -1,5 +1,13 @@
 //////// SCSS VARIABLES ////////
 
+//// BORDERS ////
+$border-size-xs: .1rem !default;
+$border-size-sm: .2rem !default;
+$border-size-md: .4rem !default;
+$border-size-lg: .7rem !default;
+$border-size-xl: 1rem !default;
+$border-size: $border-size-md !default;
+
 //// CONTAINERS ////
 $container-xs: 375px !default;
 $container-sm: 650px !default;
@@ -7,6 +15,7 @@ $container-md: 820px !default;
 $container-lg: 1180px !default;
 $container-xl: 1400px !default;
 $container: $container-md !default;
+$container-full: 100% !default;
 
 //// FONTS ////
 $font-size-xs: .5rem !default;
@@ -24,8 +33,17 @@ $gap-lg: 2rem !default;
 $gap-xl: 3rem !default;
 $gap: $gap-md !default;
 
+//// PERCENT ///
+
 //////// CUSTOM PROPERTIES ////////
 :root {
+
+  //// BORDERS ////
+  --border-size-xs: #{$border-size-xs};
+  --border-size-sm: #{$border-size-sm};
+  --border-size-md: #{$border-size-md};
+  --border-size-lg: #{$border-size-lg};
+  --border-size: #{$border-size};
 
   //// CONTAINERS ////
   --container-xs: #{$container-xs};
@@ -34,6 +52,7 @@ $gap: $gap-md !default;
   --container-lg: #{$container-lg};
   --container-xl: #{$container-xl};
   --container: #{$container};
+  --container-full: #{$container-full};
 
   //// FONTS ////
   --font-size-xs: #{$font-size-xs};
