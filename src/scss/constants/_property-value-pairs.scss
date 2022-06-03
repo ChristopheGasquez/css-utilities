@@ -1,0 +1,180 @@
+//////// CSS PROPERTY VALUES ////////
+
+//// A ////
+$align-content-values: ('center': center, 'flex-start': flex-start, 'flex-end': flex-end, 'space-between': space-between, 'space-around': space-around, 'stretch': stretch, 'initial': initial, 'inherit': inherit);
+$align-items-values: ('baseline': baseline, 'center': center, 'flex-start': flex-start, 'flex-end': flex-end, 'stretch': stretch, 'initial': initial, 'inherit': inherit);
+$align-self-values: ('auto': auto, 'baseline': baseline, 'center': center, 'flex-start': flex-start, 'flex-end': flex-end, 'stretch': stretch, 'initial': initial, 'inherit': inherit);
+$animation-delay-values: ('initial': initial, 'inherit': inherit);
+$animation-direction-values: ('normal': normal, 'reverse': reverse, 'alternate': alternate, 'alternate-reverse': alternate-reverse, 'initial': initial, 'inherit': inherit);
+$animation-duration-values: ('initial': initial, 'inherit': inherit);
+$animation-fill-mode-values: ('none': none, 'forwards': forwards, 'backwards': backwards, 'both': both, 'initial': initial, 'inherit': inherit);
+$animation-iteration-count-values: ('infinite': infinite, 'initial': initial, 'inherit': inherit);
+$animation-name-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$animation-play-state-values: ('paused': paused, 'running': running, 'initial': initial, 'inherit': inherit);
+$animation-timing-function-values: ('linear': linear, 'ease': ease, 'ease-in': ease-in, 'ease-out': ease-out, 'ease-in-out': ease-in-out, 'initial': initial, 'inherit': inherit);
+//// B ////
+$backface-visibility-values: ('visible': visible, 'hidden': hidden, 'initial': initial, 'inherit': inherit);
+$background-attachment-values: ('scroll': scroll, 'fixed': fixed, 'initial': initial, 'inherit': inherit);
+$background-clip-values: ('border-box': border-box, 'padding-box': padding-box, 'content-box': content-box, 'initial': initial, 'inherit': inherit);
+$background-color-values: ('transparent': transparent, 'initial': initial, 'inherit': inherit);
+$background-image-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$background-origin-values: ('border-box': border-box, 'padding-box': padding-box, 'content-box': content-box, 'initial': initial, 'inherit': inherit);
+$background-position-values: ('left': left, 'center': center, 'right': right, 'initial': initial, 'inherit': inherit);
+$background-repeat-values: ('repeat': repeat, 'repeat-x': repeat-x, 'repeat-y': repeat-y, 'no-repeat': no-repeat, 'initial': initial, 'inherit': inherit);
+$background-size-values: ('auto': auto, 'cover': cover, 'contain': contain, 'initial': initial, 'inherit': inherit);
+$border-bottom-color-values: ('transparent': transparent, 'inherit': inherit);
+$border-bottom-left-radius-values: ('initial': initial, 'inherit': inherit);
+$border-bottom-right-radius-values: ('initial': initial, 'inherit': inherit);
+$border-bottom-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$border-bottom-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$border-collapse-values: ('separate': separate, 'collapse': collapse, 'initial': initial, 'inherit': inherit);
+$border-color-values: ('transparent': transparent, 'inherit': inherit);
+$border-image-values: ('initial': initial, 'inherit': inherit);
+$border-image-outset-values: ('initial': initial, 'inherit': inherit);
+$border-image-repeat-values: ('stretch': stretch, 'repeat': repeat, 'round': round, 'space': space, 'initial': initial, 'inherit': inherit);
+$border-image-slice-values: ('fill': fill, 'initial': initial, 'inherit': inherit);
+$border-image-source-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$border-image-width-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$border-left-color-values: ('transparent': transparent, 'inherit': inherit);
+$border-left-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$border-left-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$border-radius-values: ('initial': initial, 'inherit': inherit);
+$border-right-color-values: ('transparent': transparent, 'inherit': inherit);
+$border-right-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$border-right-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$border-spacing-values: ('initial': initial, 'inherit': inherit);
+$border-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$border-top-color-values: ('transparent': transparent, 'inherit': inherit);
+$border-top-left-radius-values: ('initial': initial, 'inherit': inherit);
+$border-top-right-radius-values: ('initial': initial, 'inherit': inherit);
+$border-top-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$border-top-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$border-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'inherit': inherit);
+$bottom-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$box-shadow-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$box-sizing-values: ('content-box': content-box, 'border-box': border-box, 'initial': initial, 'inherit': inherit);
+//// C ////
+$caption-side-values: ('top': top, 'bottom': bottom, 'initial': initial, 'inherit': inherit);
+$clear-values: ('left': left, 'right': right, 'both': both, 'none': none, 'initial': initial, 'inherit': inherit);
+$color-values: ('initial': initial, 'inherit': inherit);
+$column-count-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$column-fill-values: ('auto': auto, 'balance': balance, 'initial': initial, 'inherit': inherit);
+$column-gap-values: ('normal': normal, 'initial': initial, 'inherit': inherit);
+$column-rule-values: ('initial': initial, 'inherit': inherit);
+$column-rule-color-values: ('initial': initial, 'inherit': inherit);
+$column-rule-style-values: ('none': none, 'hidden': hidden, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$column-rule-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$column-span-values: ('none': none, 'all': all, 'initial': initial, 'inherit': inherit);
+$column-width-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$content-values: ('normal': normal, 'none': none, 'open-quote': open-quote, 'close-quote': close-quote, 'no-open-quote': no-open-quote, 'no-close-quote': no-close-quote, 'initial': initial, 'inherit': inherit);
+$counter-increment-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$counter-reset-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$cursor-values: ('auto': auto, 'default': default, 'none': none, 'context-menu': context-menu, 'help': help, 'pointer': pointer, 'progress': progress, 'wait': wait, 'cell': cell, 'crosshair': crosshair, 'text': text, 'vertical-text': vertical-text, 'alias': alias, 'copy': copy, 'move': move, 'no-drop': no-drop, 'not-allowed': not-allowed, 'grab': grab, 'grabbing': grabbing, 'e-resize': e-resize, 'n-resize': n-resize, 'ne-resize': ne-resize, 'nw-resize': nw-resize, 's-resize': s-resize, 'se-resize': se-resize, 'sw-resize': sw-resize, 'w-resize': w-resize, 'ew-resize': ew-resize, 'ns-resize': ns-resize, 'nesw-resize': nesw-resize, 'nwse-resize': nwse-resize, 'col-resize': col-resize, 'row-resize': row-resize, 'all-scroll': all-scroll, 'zoom-in': zoom-in, 'zoom-out': zoom-out, 'initial': initial, 'inherit': inherit);
+//// D ////
+$direction-values: ('ltr': ltr, 'rtl': rtl, 'initial': initial, 'inherit': inherit);
+$display-values: ('inline': inline, 'block': block, 'contents': contents, 'flex': flex, 'flow': flow, 'flow-root': flow-root, 'grid': grid, 'inline-block': inline-block, 'inline-flex': inline-flex, 'inline-grid': inline-grid, 'inline-table': inline-table, 'list-item': list-item, 'run-in': run-in, 'table': table, 'table-caption': table-caption, 'table-column-group': table-column-group, 'table-header-group': table-header-group, 'table-footer-group': table-footer-group, 'table-row-group': table-row-group, 'table-cell': table-cell, 'table-column': table-column, 'table-row': table-row, 'none': none, 'initial': initial, 'inherit': inherit);
+//// E ////
+$empty-cells-values: ('show': show, 'hide': hide, 'initial': initial, 'inherit': inherit);
+//// F ////
+$flex-values: ('none': none, 'auto': auto, 'initial': initial, 'inherit': inherit);
+$flex-basis-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$flex-direction-values: ('row': row, 'row-reverse': row-reverse, 'column': column, 'column-reverse': column-reverse, 'initial': initial, 'inherit': inherit);
+$flex-flow-values: ('initial': initial, 'inherit': inherit);
+$flex-grow-values: ('initial': initial, 'inherit': inherit);
+$flex-shrink-values: ('initial': initial, 'inherit': inherit);
+$flex-wrap-values: ('nowrap': nowrap, 'wrap': wrap, 'wrap-reverse': wrap-reverse, 'initial': initial, 'inherit': inherit);
+$float-values: ('left': left, 'right': right, 'none': none, 'initial': initial, 'inherit': inherit);
+$font-values: ('caption': caption, 'icon': icon, 'menu': menu, 'message-box': message-box, 'small-caption': small-caption, 'status-bar': status-bar, 'initial': initial, 'inherit': inherit);
+$font-family-values: ('initial': initial, 'inherit': inherit);
+$font-size-values: ('xx-small': xx-small, 'x-small': x-small, 'small': small, 'medium': medium, 'large': large, 'x-large': x-large, 'xx-large': xx-large, 'smaller': smaller, 'larger': larger, 'initial': initial, 'inherit': inherit);
+$font-size-adjust-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$font-stretch-values: ('normal': normal, 'ultra-condensed': ultra-condensed, 'extra-condensed': extra-condensed, 'condensed': condensed, 'semi-condensed': semi-condensed, 'semi-expanded': semi-expanded, 'expanded': expanded, 'extra-expanded': extra-expanded, 'ultra-expanded': ultra-expanded, 'initial': initial, 'inherit': inherit);
+$font-style-values: ('normal': normal, 'italic': italic, 'oblique': oblique, 'initial': initial, 'inherit': inherit);
+$font-variant-values: ('normal': normal, 'small-caps': small-caps, 'initial': initial, 'inherit': inherit);
+$font-weight-values: ('normal': normal, 'bold': bold, 'bolder': bolder, 'lighter': lighter, '100': 100, '200': 200, '300': 300, '400': 400, '500': 500, '600': 600, '700': 700, '800': 800, '900': 900, 'initial': initial, 'inherit': inherit);
+//// H ////
+$height-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+//// J ////
+$justify-content-values: ('flex-start': flex-start, 'flex-end': flex-end, 'center': center, 'space-between': space-between, 'space-around': space-around, 'initial': initial, 'inherit': inherit);
+//// L ////
+$left-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$letter-spacing-values: ('normal': normal, 'initial': initial, 'inherit': inherit);
+$line-height-values: ('normal': normal, 'initial': initial, 'inherit': inherit);
+$list-style-values: ('initial': initial, 'inherit': inherit);
+$list-style-image-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$list-style-position-values: ('inside': inside, 'outside': outside, 'initial': initial, 'inherit': inherit);
+$list-style-type-values: ('disc': disc, 'circle': circle, 'square': square, 'decimal': decimal, 'decimal-leading-zero': decimal-leading-zero, 'lower-roman': lower-roman, 'upper-roman': upper-roman, 'lower-greek': lower-greek, 'lower-latin': lower-latin, 'upper-latin': upper-latin, 'armenian': armenian, 'georgian': georgian, 'lower-alpha': lower-alpha, 'upper-alpha': upper-alpha, 'none': none, 'initial': initial, 'inherit': inherit);
+//// M ////
+$margin-values: ('initial': initial, 'inherit': inherit);
+$margin-bottom-values: ('initial': initial, 'inherit': inherit);
+$margin-left-values: ('initial': initial, 'inherit': inherit);
+$margin-right-values: ('initial': initial, 'inherit': inherit);
+$margin-top-values: ('initial': initial, 'inherit': inherit);
+$max-height-values: ('initial': initial, 'inherit': inherit);
+$max-width-values: ('initial': initial, 'inherit': inherit);
+$min-height-values: ('initial': initial, 'inherit': inherit);
+$min-width-values: ('initial': initial, 'inherit': inherit);
+//// O ////$
+$opacity-values: ('initial': initial, 'inherit': inherit);
+$order-values: ('initial': initial, 'inherit': inherit);
+$outline-values: ('initial': initial, 'inherit': inherit);
+$outline-color-values: ('invert': invert, 'initial': initial, 'inherit': inherit);
+$outline-offset-values: ('initial': initial, 'inherit': inherit);
+$outline-style-values: ('none': none, 'dotted': dotted, 'dashed': dashed, 'solid': solid, 'double': double, 'groove': groove, 'ridge': ridge, 'inset': inset, 'outset': outset, 'initial': initial, 'inherit': inherit);
+$outline-width-values: ('thin': thin, 'medium': medium, 'thick': thick, 'initial': initial, 'inherit': inherit);
+$overflow-values: ('auto': auto, 'hidden': hidden, 'scroll': scroll, 'visible': visible, 'initial': initial, 'inherit': inherit);
+$overflow-x-values: ('auto': auto, 'hidden': hidden, 'scroll': scroll, 'visible': visible, 'initial': initial, 'inherit': inherit);
+$overflow-y-values: ('auto': auto, 'hidden': hidden, 'scroll': scroll, 'visible': visible, 'initial': initial, 'inherit': inherit);
+//// P ////
+$padding-values: ('initial': initial, 'inherit': inherit);
+$padding-bottom-values: ('initial': initial, 'inherit': inherit);
+$padding-left-values: ('initial': initial, 'inherit': inherit);
+$padding-right-values: ('initial': initial, 'inherit': inherit);
+$padding-top-values: ('initial': initial, 'inherit': inherit);
+$page-break-after-values: ('auto': auto, 'always': always, 'avoid': avoid, 'left': left, 'right': right, 'initial': initial, 'inherit': inherit);
+$page-break-before-values: ('auto': auto, 'always': always, 'avoid': avoid, 'left': left, 'right': right, 'initial': initial, 'inherit': inherit);
+$page-break-inside-values: ('auto': auto, 'avoid': avoid, 'initial': initial, 'inherit': inherit);
+$perspective-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$perspective-origin-values: ('initial': initial, 'inherit': inherit);
+$position-values: ('static': static, 'relative': relative, 'absolute': absolute, 'fixed': fixed, 'sticky': sticky, 'initial': initial, 'inherit': inherit);
+//// Q ////
+$quotes-values: ('none': none, 'initial': initial, 'inherit': inherit);
+//// R ////
+$resize-values: ('none': none, 'both': both, 'horizontal': horizontal, 'vertical': vertical, 'initial': initial, 'inherit': inherit);
+$right-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+//// T ////
+$tab-size-values: ('initial': initial, 'inherit': inherit);
+$table-layout-values: ('auto': auto, 'fixed': fixed, 'initial': initial, 'inherit': inherit);
+$text-align-values: ('left': left, 'right': right, 'center': center, 'justify': justify, 'initial': initial, 'inherit': inherit);
+$text-align-last-values: ('auto': auto, 'start': start, 'end': end, 'left': left, 'right': right, 'center': center, 'justify': justify, 'initial': initial, 'inherit': inherit);
+$text-decoration-values: ('none': none, 'underline': underline, 'overline': overline, 'line-through': line-through, 'blink': blink, 'initial': initial, 'inherit': inherit);
+$text-decoration-color-values: ('initial': initial, 'inherit': inherit);
+$text-decoration-line-values: ('none': none, 'underline': underline, 'overline': overline, 'line-through': line-through, 'blink': blink, 'initial': initial, 'inherit': inherit);
+$text-decoration-style-values: ('solid': solid, 'double': double, 'dotted': dotted, 'dashed': dashed, 'wavy': wavy, 'initial': initial, 'inherit': inherit);
+$text-indent-values: ('initial': initial, 'inherit': inherit);
+$text-justify-values: ('auto': auto, 'none': none, 'inter-word': inter-word, 'distribute': distribute, 'initial': initial, 'inherit': inherit);
+$text-overflow-values: ('clip': clip, 'ellipsis': ellipsis, 'initial': initial, 'inherit': inherit);
+$text-shadow-values: ('none': none, 'inherit': inherit);
+$text-transform-values: ('capitalize': capitalize, 'lowercase': lowercase, 'none': none, 'uppercase': uppercase, 'initial': initial, 'inherit': inherit);
+$top-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$transform-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$transform-origin-values: ('initial': initial, 'inherit': inherit);
+$transform-style-values: ('flat': flat, 'preserve-3d': preserve-3d, 'initial': initial, 'inherit': inherit);
+$transition-values: ('initial': initial, 'inherit': inherit);
+$transition-delay-values: ('initial': initial, 'inherit': inherit);
+$transition-duration-values: ('initial': initial, 'inherit': inherit);
+$transition-property-values: ('none': none, 'initial': initial, 'inherit': inherit);
+$transition-timing-function-values: ('linear': linear, 'ease': ease, 'ease-in': ease-in, 'ease-out': ease-out, 'ease-in-out': ease-in-out, 'initial': initial, 'inherit': inherit);
+//// U ////
+$unicode-bidi-values: ('bidi-override': bidi-override, 'embed': embed, 'normal': normal, 'initial': initial, 'inherit': inherit);
+//// V ////
+$vertical-align-values: ('baseline': baseline, 'sub': sub, 'super': super, 'top': top, 'text-top': text-top, 'middle': middle, 'bottom': bottom, 'text-bottom': text-bottom, 'initial': initial, 'inherit': inherit);
+$visibility-values: ('visible': visible, 'hidden': hidden, 'collapse': collapse, 'initial': initial, 'inherit': inherit);
+//// W ////
+$white-space-values: ('normal': normal, 'pre': pre, 'nowrap': nowrap, 'pre-line': pre-line, 'pre-wrap': pre-wrap, 'initial': initial, 'inherit': inherit);
+$width-values: ('auto': auto, 'initial': initial, 'inherit': inherit);
+$word-break-values: ('normal': normal, 'break-all': break-all, 'keep-all': keep-all, 'initial': initial, 'inherit': inherit);
+$word-spacing-values: ('normal': normal, 'initial': initial, 'inherit': inherit);
+$word-wrap-values: ('normal': normal, 'break-word': break-word, 'initial': initial, 'inherit': inherit);
+//// Z ////
+$z-index-values: ('auto': auto, 'initial': initial, 'inherit': inherit);

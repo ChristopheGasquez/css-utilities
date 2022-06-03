@@ -1,4 +1,4 @@
-//////// SCSS VARIABLES ////////
+//////// SCSS COLOR VARIABLES ////////
 
 //// MAIN COLORS ////
 $light: #fff !default;
@@ -35,7 +35,7 @@ $shade-900: lighten($dark, 10%) !default;
   --secondary: #{$secondary};
   --tertiary: #{$tertiary};
 
-  //// STATUS PROPERTIES ////
+  //// STATUS COLORS ////
   --info: #{$info};
   --success: #{$success};
   --warning: #{$warning};
@@ -58,31 +58,31 @@ $shade-900: lighten($dark, 10%) !default;
 
 //// MAIN LIST ////
 $main-colors: (
-  "light": var(--light),
-  "dark": var(--dark),
-  "primary": var(--primary),
-  "secondary": var(--secondary),
-  "tertiary": var(--tertiary),
+  'light': var(--light),
+  'dark': var(--dark),
+  'primary': var(--primary),
+  'secondary': var(--secondary),
+  'tertiary': var(--tertiary),
 );
 
 //// STATUS LIST ////
 $status-colors: (
-  "info": var(--info),
-  "success": var(--success),
-  "warning": var(--warning),
-  "danger": var(--danger),
-  "default": var(--default),
+  'info': var(--info),
+  'success': var(--success),
+  'warning': var(--warning),
+  'danger': var(--danger),
+  'default': var(--default),
 );
 
 //// SHADE LIST ////
 $shade-colors: (
-  "shade-100": var(--shade-100),
-  "shade-200": var(--shade-200),
-  "shade-300": var(--shade-300),
-  "shade-400": var(--shade-400),
-  "shade-500": var(--shade-500),
-  "shade-600": var(--shade-600),
-  "shade-700": var(--shade-700),
-  "shade-800": var(--shade-800),
-  "shade-900": var(--shade-900),
+  'shade-100': var(--shade-100),
+  'shade-200': var(--shade-200),
+  'shade-300': var(--shade-300),
+  'shade-400': var(--shade-400),
+  'shade-500': var(--shade-500),
+  'shade-600': var(--shade-600),
+  'shade-700': var(--shade-700),
+  'shade-800': var(--shade-800),
+  'shade-900': var(--shade-900),
 );

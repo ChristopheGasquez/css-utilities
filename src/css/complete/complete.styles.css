@@ -10059,3 +10059,7 @@
 .z-index--int-10 {
     z-index: var(--int-10) !important;
 }
+
+* {
+    color: red;
+}

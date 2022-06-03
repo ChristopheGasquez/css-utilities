@@ -1,4 +1,30 @@
-//////// SCSS VARIABLES ////////
+//////// SCSS SIZE VARIABLES ////////
+
+//// ABSOLUTE LENGTH ////
+// ZERO //
+$length-0: 0 !default;
+// EM //
+$length-05em: .5em !default;
+$length-075em: .55em !default;
+$length-1em: 1em !default;
+$length-2em: 2em !default;
+$length-3em: 3em !default;
+// PX //
+$length-1px: 1px !default;
+$length-2px: 2px !default;
+$length-3px: 3px !default;
+$length-5px: 5px !default;
+$length-10px: 10px !default;
+$length-20px: 20px !default;
+$length-30px: 30px !default;
+$length-50px: 50px !default;
+$length-75px: 75px !default;
+$length-100px: 100px !default;
+$length-150px: 150px !default;
+$length-200px: 200px !default;
+$length-300px: 300px !default;
+$length-400px: 400px !default;
+$length-500px: 500px !default;
 
 //// BORDERS ////
 $border-size-xs: .1rem !default;
@@ -34,9 +60,45 @@ $gap-xl: 3rem !default;
 $gap: $gap-md !default;
 
 //// PERCENT ///
+$percent-0: 0% !default;
+$percent-10: 10% !default;
+$percent-20: 20% !default;
+$percent-30: 30% !default;
+$percent-40: 40% !default;
+$percent-50: 50% !default;
+$percent-60: 60% !default;
+$percent-70: 70% !default;
+$percent-80: 80% !default;
+$percent-90: 90% !default;
+$percent-100: 100% !default;
 
 //////// CUSTOM PROPERTIES ////////
 :root {
+
+  //// ABSOLUTE ////
+  // EM //
+  --length-05em: #{$length-05em};
+  --length-075em: #{$length-075em};
+  --length-1em: #{$length-1em};
+  --length-2em: #{$length-2em};
+  --length-3em: #{$length-3em};
+  // PX //
+  --length-0: #{$length-0};
+  --length-1px: #{$length-1px};
+  --length-2px: #{$length-2px};
+  --length-3px: #{$length-3px};
+  --length-5px: #{$length-5px};
+  --length-10px: #{$length-10px};
+  --length-20px: #{$length-20px};
+  --length-30px: #{$length-30px};
+  --length-50px: #{$length-50px};
+  --length-75px: #{$length-75px};
+  --length-100px: #{$length-100px};
+  --length-150px: #{$length-150px};
+  --length-200px: #{$length-200px};
+  --length-300px: #{$length-300px};
+  --length-400px: #{$length-400px};
+  --length-500px: #{$length-500px};
 
   //// BORDERS ////
   --border-size-xs: #{$border-size-xs};
@@ -69,37 +131,93 @@ $gap: $gap-md !default;
   --gap-lg: #{$gap-lg};
   --gap-xl: #{$gap-xl};
   --gap: #{$gap};
+
+  //// PERCENT ////
+  --percent-0: #{$percent-0};
+  --percent-10: #{$percent-10};
+  --percent-20: #{$percent-20};
+  --percent-30: #{$percent-30};
+  --percent-40: #{$percent-40};
+  --percent-50: #{$percent-50};
+  --percent-60: #{$percent-60};
+  --percent-70: #{$percent-70};
+  --percent-80: #{$percent-80};
+  --percent-90: #{$percent-90};
+  --percent-100: #{$percent-100};
 }
 
 //////// SIZE LIST ////////
 
+//// ABSOLUTE LIST ////
+// EM //
+$absolute-em-list: (
+  'length-05em': var(--length-05em),
+  'length-075em': var(--length-075em),
+  'length-1em': var(--length-1em),
+  'length-2em': var(--length-2em),
+  'length-3em': var(--length-3em),
+);
+// PX //
+$absolute-px-list: (
+  'length-0': var(--length-0),
+  'length-1px': var(--length-1px),
+  'length-2px': var(--length-2px),
+  'length-3px': var(--length-3px),
+  'length-5px': var(--length-5px),
+  'length-10px': var(--length-10px),
+  'length-20px': var(--length-20px),
+  'length-30px': var(--length-30px),
+  'length-50px': var(--length-50px),
+  'length-75px': var(--length-75px),
+  'length-100px': var(--length-100px),
+  'length-150px': var(--length-150px),
+  'length-200px': var(--length-200px),
+  'length-300px': var(--length-300px),
+  'length-400px': var(--length-400px),
+  'length-500px': var(--length-500px),
+);
+
 //// CONTAINER LIST ////
-$container-sizes: (
-  "container-xs": var(--container-xs),
-  "container-sm": var(--container-sm),
-  "container-md": var(--container-md),
-  "container-lg": var(--container-lg),
-  "container-xl": var(--container-xl),
-  "container": var(--container),
+$container-list: (
+  'container-xs': var(--container-xs),
+  'container-sm': var(--container-sm),
+  'container-md': var(--container-md),
+  'container-lg': var(--container-lg),
+  'container-xl': var(--container-xl),
+  'container': var(--container),
 );
 
 //// FONT LIST ////
 $font-size-list: (
-  "font-size-xs": var(--font-size-xs),
-  "font-size-sm": var(--font-size-sm),
-  "font-size-md": var(--font-size-md),
-  "font-size-lg": var(--font-size-lg),
-  "font-size-xl": var(--font-size-xl),
-  "font-size": var(--font-size),
+  'font-size-xs': var(--font-size-xs),
+  'font-size-sm': var(--font-size-sm),
+  'font-size-md': var(--font-size-md),
+  'font-size-lg': var(--font-size-lg),
+  'font-size-xl': var(--font-size-xl),
+  'font-size': var(--font-size),
 );
 
 //// GAP LIST ////
 $gap-list: (
-  "gap-xs": var(--gap-xs),
-  "gap-sm": var(--gap-sm),
-  "gap-md": var(--gap-md),
-  "gap-lg": var(--gap-lg),
-  "gap-xl": var(--gap-xl),
-  "gap": var(--gap),
+  'gap-xs': var(--gap-xs),
+  'gap-sm': var(--gap-sm),
+  'gap-md': var(--gap-md),
+  'gap-lg': var(--gap-lg),
+  'gap-xl': var(--gap-xl),
+  'gap': var(--gap),
 );
 
+//// PERCENT LIST ////
+$percent-list: (
+  'percent-0': var(--percent-0),
+  'percent-10': var(--percent-10),
+  'percent-20': var(--percent-20),
+  'percent-30': var(--percent-30),
+  'percent-40': var(--percent-40),
+  'percent-50': var(--percent-50),
+  'percent-60': var(--percent-60),
+  'percent-70': var(--percent-70),
+  'percent-80': var(--percent-80),
+  'percent-90': var(--percent-90),
+  'percent-100': var(--percent-100),
+);

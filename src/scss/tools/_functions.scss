@@ -14,7 +14,7 @@
   // LOOP ON LIST
   @each $item in $list {
     // MERGE MAP WHIT CURRENT LIST TRANSFORMED HAS A MAP
-    $map: map_merge($map, ("#{$item}": #{$item}));
+    $map: map_merge($map, ('#{$item}': #{$item}));
   }
   // RETURN MAP
   @return $map;

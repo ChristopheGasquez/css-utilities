@@ -1,8 +1,6 @@
 // GLOBALS IMPORTS
-@import "tools/index";
-@import "variables/index";
+//@import 'tools/index';
+//@import 'variables/index';
+//@import 'constants/index';
 
-$background-color-k: ("bgc": background-color);
-@include classesGenerator($background-color-k, fromListToMap(("red", blue)));
-
-
+@import 'factories/oocss.complete';

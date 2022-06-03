@@ -1,0 +1,31 @@
+//////// SCSS TIME VARIABLES ////////
+
+//// DURATION ////
+$duration-01: .1s !default;
+$duration-05: .5s !default;
+$duration-1: 1s !default;
+//$duration-15: 1.5s !default;
+$duration-2: 2s !default;
+
+
+//////// CUSTOM PROPERTIES ////////
+:root {
+
+  //// DURATIONS ////
+  --duration-01: #{$duration-01};
+  --duration-05: #{$duration-05};
+  --duration-1: #{$duration-1};
+  //--duration-15: #{$duration-15};
+  --duration-2: #{$duration-2};
+}
+
+//////// TIME LIST ////////
+
+//// DURATION LIST ////
+$duration-list: (
+  'duration-01': var(--duration-01),
+  'duration-05': var(--duration-05),
+  'duration-1': var(--duration-1),
+  //'duration-15': var(--duration-15),
+  'duration-2': var(--duration-2),
+);

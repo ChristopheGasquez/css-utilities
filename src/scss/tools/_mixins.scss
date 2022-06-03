@@ -13,7 +13,6 @@
 //     `
 //
 @mixin classesGenerator($propsMap, $valuesMap) {
-  @debug $propsMap, $valuesMap;
   // LOOP ON PROPS MAP
   @each $prefix, $property in $propsMap {
     // LOOP ON VALUES MAP

@@ -1,0 +1,78 @@
+//////// SCSS INTEGER AND DECIMALS VARIABLE ////////
+
+//// DECIMALS ////
+$dec-1: .1 !default;
+$dec-2: .2 !default;
+$dec-3: .3 !default;
+$dec-4: .4 !default;
+$dec-5: .5 !default;
+$dec-6: .6 !default;
+$dec-7: .7 !default;
+$dec-8: .8 !default;
+$dec-9: .9 !default;
+
+//// INTEGERS ////
+$int-1: 1 !default;
+$int-2: 2 !default;
+$int-3: 3 !default;
+$int-4: 4 !default;
+$int-5: 5 !default;
+$int-6: 6 !default;
+$int-7: 7 !default;
+$int-8: 8 !default;
+$int-9: 9 !default;
+$int-10: 10 !default;
+
+//////// CUSTOM PROPERTIES ////////
+:root {
+
+  //// DECIMALS ////
+  --dec-1: #{$dec-1};
+  --dec-2: #{$dec-2};
+  --dec-3: #{$dec-3};
+  --dec-4: #{$dec-4};
+  --dec-5: #{$dec-5};
+  --dec-6: #{$dec-6};
+  --dec-7: #{$dec-7};
+  --dec-8: #{$dec-8};
+  --dec-9: #{$dec-9};
+
+  //// INTEGERS ////
+  --int-1: #{$int-1};
+  --int-2: #{$int-2};
+  --int-3: #{$int-3};
+  --int-4: #{$int-4};
+  --int-5: #{$int-5};
+  --int-6: #{$int-6};
+  --int-7: #{$int-7};
+  --int-8: #{$int-8};
+  --int-9: #{$int-9};
+  --int-10: #{$int-10};
+}
+
+//////// DECIMAL LIST ////////
+$dec-list: (
+  'dec-1': var(--dec-1),
+  'dec-2': var(--dec-2),
+  'dec-3': var(--dec-3),
+  'dec-4': var(--dec-4),
+  'dec-5': var(--dec-5),
+  'dec-6': var(--dec-6),
+  'dec-7': var(--dec-7),
+  'dec-8': var(--dec-8),
+  'dec-9': var(--dec-9),
+);
+
+//////// INTEGER LIST ////////
+$int-list: (
+  'int-1': var(--int-1),
+  'int-2': var(--int-2),
+  'int-3': var(--int-3),
+  'int-4': var(--int-4),
+  'int-5': var(--int-5),
+  'int-6': var(--int-6),
+  'int-7': var(--int-7),
+  'int-8': var(--int-8),
+  'int-9': var(--int-9),
+  'int-10': var(--int-10)
+);

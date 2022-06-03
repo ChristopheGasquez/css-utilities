@@ -1,0 +1,193 @@
+@import '../constants/property-value-pairs';
+@import '../constants/property-key-pairs';
+@import '../tools/functions';
+@import '../tools/mixins';
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/times';
+@import '../variables/integers';
+
+//////// LIGHT OOCSS FACTORY ////////
+
+//// A ////
+@include classesGenerator($align-content-key-prop, $align-content-values);
+//@include classesGenerator($align-items-key-prop, $align-items-values);
+//@include classesGenerator($align-self-key-prop, $align-self-values);
+//@include classesGenerator($animation-delay-key-prop, mapCollect($animation-delay-values, $duration-list));
+//@include classesGenerator($animation-direction-key-prop, $animation-direction-values);
+//@include classesGenerator($animation-duration-key-prop, mapCollect($animation-duration-values, $duration-list));
+//@include classesGenerator($animation-fill-mode-key-prop, $animation-fill-mode-values);
+//@include classesGenerator($animation-iteration-count-key-prop, mapCollect($animation-iteration-count-values, $int-list));
+//@include classesGenerator($animation-name-key-prop, $animation-name-values);
+//@include classesGenerator($animation-play-state-key-prop, $animation-play-state-values);
+//@include classesGenerator($animation-timing-function-key-prop, $animation-timing-function-values);
+//// B ////
+//@include classesGenerator($backface-visibility-key-prop, $backface-visibility-values);
+//@include classesGenerator($background-attachment-key-prop, $background-attachment-values);
+//@include classesGenerator($background-clip-key-prop, $background-clip-values);
+@include classesGenerator($background-color-key-prop, mapCollect($background-color-values, $main-colors /*, $shade-colors*/
+, $status-colors));
+//@include classesGenerator($background-image-key-prop, $background-image-values);
+//@include classesGenerator($background-origin-key-prop, $background-origin-values);
+//@include classesGenerator($background-position-key-prop, mapCollect($background-position-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($background-repeat-key-prop, $background-repeat-values);
+//@include classesGenerator($background-size-key-prop, mapCollect($background-size-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-bottom-color-key-prop, mapCollect($border-bottom-color-values, $main-colors/*, $shade-colors*/, $status-colors));
+//@include classesGenerator($border-bottom-left-radius-key-prop, mapCollect($border-bottom-left-radius-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-bottom-right-radius-key-prop, mapCollect($border-bottom-right-radius-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-bottom-style-key-prop, $border-bottom-style-values);
+//@include classesGenerator($border-bottom-width-key-prop, mapCollect($border-bottom-width-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($border-collapse-key-prop, $border-collapse-values);
+@include classesGenerator($border-color-key-prop, mapCollect($border-color-values, $main-colors /*, $shade-colors*/
+, $status-colors));
+//@include classesGenerator($border-image-key-prop, $border-image-values);
+//@include classesGenerator($border-image-outset-key-prop, mapCollect($border-image-outset-values, $absolute-px-list));
+//@include classesGenerator($border-image-repeat-key-prop, $border-image-repeat-values);
+//@include classesGenerator($border-image-slice-key-prop, mapCollect($border-image-slice-values, $int-list, $percent-list));
+//@include classesGenerator($border-image-source-key-prop, $border-image-source-values);
+//@include classesGenerator($border-image-width-key-prop, mapCollect($border-image-width-values, $absolute-em-list, $absolute-px-list, $int-list, $percent-list));
+//@include classesGenerator($border-left-color-key-prop, mapCollect($border-left-color-values, $main-colors/*, $shade-colors*/, $status-colors));
+//@include classesGenerator($border-left-style-key-prop, $border-left-style-values);
+//@include classesGenerator($border-left-width-key-prop, mapCollect($border-left-width-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($border-radius-key-prop, mapCollect($border-radius-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-right-color-key-prop, mapCollect($border-right-color-values, $main-colors/*, $shade-colors*/, $status-colors));
+//@include classesGenerator($border-right-style-key-prop, $border-right-style-values);
+//@include classesGenerator($border-right-width-key-prop, mapCollect($border-right-width-values, $absolute-em-list, $absolute-px-list, $int-list, $percent-list));
+//@include classesGenerator($border-spacing-key-prop, mapCollect($border-spacing-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($border-style-key-prop, $border-style-values);
+//@include classesGenerator($border-top-color-key-prop, mapCollect($border-top-color-values, $main-colors/*, $shade-colors*/, $status-colors));
+//@include classesGenerator($border-top-left-radius-key-prop, mapCollect($border-top-left-radius-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-top-right-radius-key-prop, mapCollect($border-top-right-radius-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($border-top-style-key-prop, $border-top-style-values);
+//@include classesGenerator($border-top-width-key-prop, mapCollect($border-top-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($border-width-key-prop, mapCollect($border-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($bottom-key-prop, mapCollect($bottom-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($box-shadow-key-prop, $box-shadow-values);
+@include classesGenerator($box-sizing-key-prop, $box-sizing-values);
+//// C ////
+//@include classesGenerator($caption-side-key-prop, $caption-side-values);
+//@include classesGenerator($clear-key-prop, $clear-values);
+@include classesGenerator($color-key-prop, mapCollect($color-values, $main-colors, $status-colors /*, $shade-colors*/
+));
+//@include classesGenerator($column-count-key-prop, mapCollect($column-count-values, $int-list));
+//@include classesGenerator($column-fill-key-prop, $column-fill-values);
+//@include classesGenerator($column-gap-key-prop, mapCollect($column-gap-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($column-rule-key-prop, $column-rule-values);
+//@include classesGenerator($column-rule-color-key-prop, mapCollect($column-rule-color-values, $main-colors, $status-colors/*, $shade-colors*/));
+//@include classesGenerator($column-rule-style-key-prop, $column-rule-style-values);
+//@include classesGenerator($column-rule-width-key-prop, mapCollect($column-rule-width-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($column-span-key-prop, $column-span-values);
+//@include classesGenerator($column-width-key-prop, mapCollect($column-width-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($content-key-prop, $content-values);
+//@include classesGenerator($counter-increment-key-prop, $counter-increment-values);
+//@include classesGenerator($counter-reset-key-prop, $counter-reset-values);
+@include classesGenerator($cursor-key-prop, $cursor-values);
+//// D ////
+//@include classesGenerator($direction-key-prop, $direction-values);
+@include classesGenerator($display-key-prop, $display-values);
+//// E ////
+//@include classesGenerator($empty-cells-key-prop, $empty-cells-values);
+//// F ////
+@include classesGenerator($flex-key-prop, $flex-values);
+@include classesGenerator($flex-basis-key-prop, mapCollect($flex-basis-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($flex-direction-key-prop, $flex-direction-values);
+@include classesGenerator($flex-flow-key-prop, $flex-flow-values);
+@include classesGenerator($flex-grow-key-prop, mapCollect($flex-grow-values, $int-list));
+@include classesGenerator($flex-shrink-key-prop, mapCollect($flex-shrink-values, $int-list));
+@include classesGenerator($flex-wrap-key-prop, $flex-wrap-values);
+@include classesGenerator($float-key-prop, $float-values);
+@include classesGenerator($font-key-prop, $font-values);
+//@include classesGenerator($font-family-key-prop, $font-family-values);
+@include classesGenerator($font-size-key-prop, mapCollect($font-size-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($font-size-adjust-key-prop, mapCollect($font-size-adjust-values, $dec-list));
+//@include classesGenerator($font-stretch-key-prop, $font-stretch-values);
+@include classesGenerator($font-style-key-prop, $font-style-values);
+//@include classesGenerator($font-variant-key-prop, $font-variant-values);
+@include classesGenerator($font-weight-key-prop, $font-weight-values);
+//// H ////
+@include classesGenerator($height-key-prop, mapCollect($height-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//// J ////
+@include classesGenerator($justify-content-key-prop, $justify-content-values);
+//// L ////
+@include classesGenerator($left-key-prop, mapCollect($left-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($letter-spacing-key-prop, mapCollect($letter-spacing-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($line-height-key-prop, mapCollect($line-height-values, $int-list));
+//@include classesGenerator($list-style-key-prop, $list-style-values);
+//@include classesGenerator($list-style-image-key-prop, $list-style-image-values);
+//@include classesGenerator($list-style-position-key-prop, $list-style-position-values);
+@include classesGenerator($list-style-type-key-prop, $list-style-type-values);
+//// M ////
+@include classesGenerator($margin-key-prop, mapCollect($margin-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($margin-bottom-key-prop, mapCollect($margin-bottom-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($margin-left-key-prop, mapCollect($margin-left-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($margin-right-key-prop, mapCollect($margin-right-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($margin-top-key-prop, mapCollect($margin-top-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($max-height-key-prop, mapCollect($max-height-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($max-width-key-prop, mapCollect($max-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($min-height-key-prop, mapCollect($min-height-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($min-width-key-prop, mapCollect($min-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//// O ////
+@include classesGenerator($opacity-key-prop, mapCollect($opacity-values, $dec-list));
+@include classesGenerator($order-key-prop, mapCollect($order-values, $int-list));
+//@include classesGenerator($outline-key-prop, $outline-values);
+//@include classesGenerator($outline-color-key-prop, mapCollect($outline-color-values, $main-colors, $status-colors/*, $shade-colors*/));
+//@include classesGenerator($outline-offset-key-prop, mapCollect($outline-offset-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($outline-style-key-prop, $outline-style-values);
+//@include classesGenerator($outline-width-key-prop, mapCollect($outline-width-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($overflow-key-prop, $overflow-values);
+@include classesGenerator($overflow-x-key-prop, $overflow-x-values);
+@include classesGenerator($overflow-y-key-prop, $overflow-y-values);
+//// P ////
+@include classesGenerator($padding-key-prop, mapCollect($padding-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($padding-bottom-key-prop, mapCollect($padding-bottom-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($padding-left-key-prop, mapCollect($padding-left-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($padding-right-key-prop, mapCollect($padding-right-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($padding-top-key-prop, mapCollect($padding-top-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($page-break-after-key-prop, $page-break-after-values);
+//@include classesGenerator($page-break-before-key-prop, $page-break-before-values);
+//@include classesGenerator($page-break-inside-key-prop, $page-break-inside-values);
+//@include classesGenerator($perspective-key-prop, mapCollect($perspective-values, $absolute-em-list, $absolute-px-list));
+//@include classesGenerator($perspective-origin-key-prop, $perspective-origin-values);
+@include classesGenerator($position-key-prop, $position-values);
+//// Q ////
+//@include classesGenerator($quote-key-prop, $quote-values);
+//// R ////
+//@include classesGenerator($resize-key-prop, $resize-values);
+@include classesGenerator($right-key-prop, mapCollect($right-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//// T ////
+//@include classesGenerator($tab-size-key-prop, mapCollect($tab-size-values, $absolute-em-list, $absolute-px-list, $int-list));
+//@include classesGenerator($table-layout-key-prop, $table-layout-values);
+@include classesGenerator($text-align-key-prop, $text-align-values);
+//@include classesGenerator($text-align-last-key-prop, $text-align-last-values);
+@include classesGenerator($text-decoration-key-prop, $text-decoration-values);
+@include classesGenerator($text-decoration-color-key-prop, mapCollect($text-decoration-color-values, $main-colors, $status-colors /*, $shade-colors*/
+));
+//@include classesGenerator($text-decoration-line-key-prop, $text-decoration-line-values);
+@include classesGenerator($text-decoration-style-key-prop, $text-decoration-style-values);
+@include classesGenerator($text-indent-key-prop, mapCollect($text-indent-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($text-justify-key-prop, $text-justify-values);
+@include classesGenerator($text-overflow-key-prop, $text-overflow-values);
+@include classesGenerator($text-shadow-key-prop, $text-shadow-values);
+@include classesGenerator($text-transform-key-prop, $text-transform-values);
+@include classesGenerator($top-key-prop, mapCollect($top-values, $absolute-em-list, $absolute-px-list, $percent-list));
+//@include classesGenerator($transform-key-prop, $transform-values);
+//@include classesGenerator($transform-origin-key-prop, mapCollect($transform-origin-values, $percent-list));
+//@include classesGenerator($transform-style-key-prop, $transform-style-values);
+//@include classesGenerator($transition-key-prop, $transition-values);
+//@include classesGenerator($transition-delay-key-prop, mapCollect($transition-delay-values, $duration-list));
+//@include classesGenerator($transition-duration-key-prop, mapCollect($transition-duration-values, $duration-list));
+//@include classesGenerator($transition-property-key-prop, $transition-property-values);
+//@include classesGenerator($transition-timing-function-key-prop, $transition-timing-function-values);
+//// U ////
+//@include classesGenerator($unicode-bidi-key-prop, $unicode-bidi-values);
+//// V ////
+@include classesGenerator($vertical-align-key-prop, mapCollect($vertical-align-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($visibility-key-prop, $visibility-values);
+//// W ////
+@include classesGenerator($white-space-key-prop, $white-space-values);
+@include classesGenerator($width-key-prop, mapCollect($width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($word-break-key-prop, $word-break-values);
+@include classesGenerator($word-spacing-key-prop, mapCollect($word-spacing-values, $absolute-em-list, $absolute-px-list));
+@include classesGenerator($word-wrap-key-prop, $word-wrap-values);
+//// Z ////
+@include classesGenerator($z-index-key-prop, mapCollect($z-index-values, $int-list));
