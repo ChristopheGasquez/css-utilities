@@ -18,19 +18,35 @@ Add the Node package to your project:
 $ npm i crispi-css-utilities --save
 ```
 
-You can now use the library in your project in [SCSS mode](#use-in-scss-mode) 
-or [CSS mode](#use-in-css-mode) and customize it to your liking.
+You can now use the library in your project in [CSS mode](#use-in-css-mode) 
+or [SCSS mode](#use-in-scss-mode) and customize it to your liking.
 
 ### HTTP Deliver
 
-Add the style sheet links that suit you (light, medium, complete, etc.) on your `<head>` tag.
+Add the style sheet links that suit you (`light`, `medium` or `complete`) on your `<head>` tag.
 ```html
-<link href="https://css-utilities.crispi.app/css/{{ styles.css }}" rel="stylesheet">
+<!-- {{ version }} must be replace by the version name( light, medium or complete). -->
+<link href="https://css-utilities.crispi.app/css/{{ version }}.styles.css" rel="stylesheet">
 ```
+
+### Choice of versions
+
+*Crispi Css Utilities* provides you with three versions of its style sheets: `light`, `medium` and `complete`:
+
+- The `light` version contains a limited number of properties. 
+  These are the most common properties.
+  It is a version quite suitable for small projects wanting to be fast and light.
+- The `medium` version contains a large part of the properties available in css
+  and makes it possible to meet the majority of needs.
+  This is the recommended version for the majority of projects.
+- The `complete` version provides the exhaustive list of css properties available. 
+  Some of them are uncommon. It is also the heaviest version.
+  This version is only recommended for projects requiring uncommon css rules, 
+  or for testing or learning purposes.
 
 ## Overall operation
 
-Crispi CSS Utilities is a micro framework providing developers with a set of classes 
+*Crispi CSS Utilities* is a micro framework providing developers with a set of classes 
 responding to a simple formalism:  
 The name of the property in kebab case (example: `text-align`, 
 followed by the expected value in kebab case (example: `center`, separated by a double dash `--`.
@@ -217,13 +233,80 @@ The list of times is:
  
 ## Use in CSS mode
 
-### Importation
+> *TODO: Complete the section.*
 
-### Customize
+### CSS importation
 
+> *TODO: Complete the section.*
+
+### CSS customizations
+
+> *TODO: Complete the section.*
 
 ## Use in SCSS mode
 
-### Scripts
+> *TODO: Complete the section.*
 
-### Customize
+### SCSS scripts
+
+> *TODO: Complete the section.*
+
+### SCSS customizations
+
+You can customize your styles in the same way as with the css mode, 
+using the custom property. See the part: [CSS customization](#css-customizations).
+
+You can also customize your styles thanks to the scss variables. 
+*Crispi CSS Utilities* scss variables are all set to `!default`, 
+so you can override them with your own values. 
+For them to be taken into account during compilation, 
+define them before importing the *Crispi CSS Utilities* styles.
+
+> Example: To change the primary color, do...
+> ```scss
+> $primary: yellow;
+> 
+> @import 'node_modules/ncss-utilities/scss/medium.styles.scss';
+> ```
+Because all non-fixed values inherit from an scss variable marked as `!default`, 
+you can easily deduce all of these variables and their custom properties.
+
+> Example: For non-fixed value `container-xs`  
+> ```scss
+> // You can deduct that associated scss variable:
+> $container-xs: 375px !default;
+>  
+> // You can deduct that associated custom property
+> :root {
+>   --container-xs: $container-xs;
+> }
+> 
+> // The list of variables associated with container values will also contain
+> // a container-xs property associated with the custom property --container-xs
+> $container-list: (
+>   'container-xs': var(--container-xs)
+> )
+> ```
+
+So, by overriding the original `$container-xs` variable, 
+you are also overriding the associated custom property as well as its reference in the parent list.
+
+Finally, you can use the functions and mixins of *Crispi CSS utilities* 
+to add your own css classes to your final stylesheet.
+
+> Example: To create your abbreviated background color classes :  
+> ```scss
+> @import 'node_modules/ncss-utilities/scss/tools';
+> 
+> @include classesGenerator(('bkc': background-color), fromListToMap(red, blue));
+> ```
+> After compiling:
+> ```css
+> .bkc--red {
+>   background-color: red;
+> }
+> .bkc--blue {
+>   background-color: blue;
+> }
+> ```
+>

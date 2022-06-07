@@ -6,9 +6,9 @@
     "clean": "rimraf src/css",
     "scss:watch": "node-sass src/scss/styles.scss -o src/css && node-sass --watch src/scss/styles.scss -o src/css",
     "scss": "node-sass src/scss/styles.scss -o src/css",
-    "build:complete": "node-sass src/scss/complete.styles.scss -o src/css/complete",
-    "build:light": "node-sass src/scss/light.styles.scss -o src/css/light",
-    "build:medium": "node-sass src/scss/medium.styles.scss -o src/css/medium",
+    "build:complete": "node-sass src/scss/complete.styles.scss -o src/css",
+    "build:light": "node-sass src/scss/light.styles.scss -o src/css",
+    "build:medium": "node-sass src/scss/medium.styles.scss -o src/css",
     "build": "npm run clean && npm run scss && npm run build:complete && npm run build:light && npm run build:medium",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
