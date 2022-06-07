@@ -1,7 +1,7 @@
 {
-  "name": "crispi-oocss",
+  "name": "crispi-css-utilities",
   "version": "1.0.0",
-  "description": "Generator of configurable style rules in OOCSS (Object Oriented Cascading Style Sheets) format.",
+  "description": "Generator of configurable style rules.",
   "scripts": {
     "clean": "rimraf src/css",
     "scss:watch": "node-sass src/scss/styles.scss -o src/css && node-sass --watch src/scss/styles.scss -o src/css",
@@ -14,20 +14,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChristopheGasquez/oocss.git"
+    "url": "git+https://github.com/ChristopheGasquez/css-utilities.git"
   },
   "keywords": [
-    "SCSS",
-    "OOCSS",
     "CSS",
+    "SCSS",
+    "Utilities",
     "Styles"
   ],
   "author": "Christophe Gasquez <c.gasquez.dl@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChristopheGasquez/oocss/issues"
+    "url": "https://github.com/ChristopheGasquez/css-utilities/issues"
   },
-  "homepage": "https://github.com/ChristopheGasquez/oocss#readme",
+  "homepage": "https://github.com/ChristopheGasquez/css-utilities#readme",
   "dependencies": {
     "install": "^0.13.0",
     "node-sass": "^7.0.1",

@@ -10,17 +10,17 @@ $font-family: $font-family-primary, $font-family-secondary, $font-family-tertiar
 :root {
 
   //// FONT FAMILY ////
-  --font-family-primary: #{$font-family-primary};
-  --font-family-secondary: #{$font-family-secondary};
-  --font-family-tertiary: #{$font-family-tertiary};
-  --font-family: #{$font-family};
+  --f-primary: #{$font-family-primary};
+  --f-secondary: #{$font-family-secondary};
+  --f-tertiary: #{$font-family-tertiary};
+  --f-families: #{$font-family};
 }
 
 //////// FONT LIST ////////
 
 //// FONT FAMILY LIST ////
-$font-families: (
-  'primary': var(--font-family-primary),
-  'secondary': var(--font-family-secondary),
-  'tertiary': var(--font-family-tertiary),
+$font-family-list: (
+  'f-primary': var(--f-primary),
+  'f-secondary': var(--f-secondary),
+  'f-tertiary': var(--f-tertiary),
 );

@@ -3,11 +3,12 @@
 @import '../tools/functions';
 @import '../tools/mixins';
 @import '../variables/colors';
+@import '../variables/fonts';
 @import '../variables/sizes';
 @import '../variables/times';
 @import '../variables/integers';
 
-//////// COMPLETE OOCSS FACTORY ////////
+//////// COMPLETE CSS FACTORY ////////
 
 //// A ////
 @include classesGenerator($align-content-key-prop, $align-content-values);
@@ -94,7 +95,7 @@
 @include classesGenerator($flex-wrap-key-prop, $flex-wrap-values);
 @include classesGenerator($float-key-prop, $float-values);
 @include classesGenerator($font-key-prop, $font-values);
-@include classesGenerator($font-family-key-prop, $font-family-values);
+@include classesGenerator($font-family-key-prop, mapCollect($font-family-values, $font-family-list));
 @include classesGenerator($font-size-key-prop, mapCollect($font-size-values, $absolute-em-list, $absolute-px-list, $percent-list));
 @include classesGenerator($font-size-adjust-key-prop, mapCollect($font-size-adjust-values, $dec-list));
 @include classesGenerator($font-stretch-key-prop, $font-stretch-values);
@@ -120,9 +121,9 @@
 @include classesGenerator($margin-right-key-prop, mapCollect($margin-right-values, $absolute-em-list, $absolute-px-list, $percent-list));
 @include classesGenerator($margin-top-key-prop, mapCollect($margin-top-values, $absolute-em-list, $absolute-px-list, $percent-list));
 @include classesGenerator($max-height-key-prop, mapCollect($max-height-values, $absolute-em-list, $absolute-px-list, $percent-list));
-@include classesGenerator($max-width-key-prop, mapCollect($max-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($max-width-key-prop, mapCollect($max-width-values, $absolute-em-list, $absolute-px-list, $container-list, $percent-list));
 @include classesGenerator($min-height-key-prop, mapCollect($min-height-values, $absolute-em-list, $absolute-px-list, $percent-list));
-@include classesGenerator($min-width-key-prop, mapCollect($min-width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($min-width-key-prop, mapCollect($min-width-values, $absolute-em-list, $absolute-px-list, $container-list, $percent-list));
 //// O ////
 @include classesGenerator($opacity-key-prop, mapCollect($opacity-values, $dec-list));
 @include classesGenerator($order-key-prop, mapCollect($order-values, $int-list));
@@ -181,7 +182,7 @@
 @include classesGenerator($visibility-key-prop, $visibility-values);
 //// W ////
 @include classesGenerator($white-space-key-prop, $white-space-values);
-@include classesGenerator($width-key-prop, mapCollect($width-values, $absolute-em-list, $absolute-px-list, $percent-list));
+@include classesGenerator($width-key-prop, mapCollect($width-values, $absolute-em-list, $absolute-px-list, $container-list, $percent-list));
 @include classesGenerator($word-break-key-prop, $word-break-values);
 @include classesGenerator($word-spacing-key-prop, mapCollect($word-spacing-values, $absolute-em-list, $absolute-px-list));
 @include classesGenerator($word-wrap-key-prop, $word-wrap-values);
