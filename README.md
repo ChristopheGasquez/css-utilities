@@ -4,13 +4,13 @@
 
 # Crispi CSS Utilities
 
-*Crispi Css Utilities* is a style micro framework that can be used in both scss and css.  
+*Crispi Css Utilities* is a style micro framework that can be used in both SCSS and CSS.  
 It provides classes respecting a naming formalism that can be easily deduced.  
 You can customize the entire library to adapt it to your needs and your designs.
 
 ## Installation
 
-### Node package **(recommended)**
+### Node package *(recommended)*
 
 Add the Node package to your project:
 
@@ -21,7 +21,7 @@ $ npm i crispi-css-utilities --save
 You can now use the library in your project in [CSS mode](#use-in-css-mode) 
 or [SCSS mode](#use-in-scss-mode) and customize it to your liking.
 
-### HTTP Deliver
+### HTTP Deliver *(not recommended)*
 
 Add the style sheet links that suit you (`light`, `medium` or `complete`) on your `<head>` tag.
 ```html
@@ -36,27 +36,27 @@ Add the style sheet links that suit you (`light`, `medium` or `complete`) on you
 - The `light` version contains a limited number of properties. 
   These are the most common properties.
   It is a version quite suitable for small projects wanting to be fast and light.
-- The `medium` version contains a large part of the properties available in css
+- The `medium` version contains a large part of the properties available in CSS
   and makes it possible to meet the majority of needs.
   This is the recommended version for the majority of projects.
-- The `complete` version provides the exhaustive list of css properties available. 
+- The `complete` version provides the exhaustive list of CSS properties available. 
   Some of them are uncommon. It is also the heaviest version.
-  This version is only recommended for projects requiring uncommon css rules, 
+  This version is only recommended for projects requiring uncommon CSS rules, 
   or for testing or learning purposes.
 
 ## Overall operation
 
 *Crispi CSS Utilities* is a micro framework providing developers with a set of classes 
 responding to a simple formalism:  
-The name of the property in kebab case (example: `text-align`, 
-followed by the expected value in kebab case (example: `center`, separated by a double dash `--`.
+The name of the property in kebab case (example: `text-align`), 
+followed by the expected value in kebab case (example: `center`), separated by a double dash `--`.
 
-To center the text of a paragraph, you can therefore write:
-```html
-<p class="text-align--center">My centered paragraph</p>
-```
+> Example: To center the text of a paragraph, you can therefore write:
+> ```html
+> <p class="text-align--center">My centered paragraph</p>
+> ```
 
-If the list of properties corresponds strictly to that defined by the css standards, 
+If the list of properties corresponds strictly to that defined by the CSS standards, 
 the list of values ​​is enriched.
 
 Indeed, in addition to the fixed values ​​linked to the property,
@@ -64,7 +64,7 @@ Indeed, in addition to the fixed values ​​linked to the property,
 
 > Example:
 > The `word-spacing` property can take as a fixed value, one of the following values: `auto`, `initail`, `inherit`.
-> However, it can be associated with a non-fixed value, such as a length in pixels `px` or ephemeral unit `em`).
+> However, it can be associated with a non-fixed value, such as a length in pixels `px` or ephemeral unit `em`.
 > ```html
 > <p class="word-spacing--length-10px">My centered paragraph</p>
 >  ```
@@ -233,31 +233,84 @@ The list of times is:
  
 ## Use in CSS mode
 
-> *TODO: Complete the section.*
+We recommend using [SCSS mode](#use-in-scss-mode). But if you don't want to compile your style sheets, 
+and only use CSS technology, you can still use and customize *Crispi CSS Utilities*.
 
 ### CSS importation
 
-> *TODO: Complete the section.*
+You can either use the CSS stylesheets stored on our servers (not recommended), 
+or add our CSS stylesheets to your project via npm, or by downloading them from our 
+[github repository](https://github.com/ChristopheGasquez/css-utilities.git).
+
+> Example: Import directly from *Crispi* servers
+> ```html
+> <!-- {{ version }} must be replace by the version name( light, medium or complete). -->
+> <link href="https://css-utilities.crispi.app/css/{{ version }}.styles.css" rel="stylesheet">
+> <link href="{{your-project-name}}/css/your-project-styles.css" rel="stylesheet">
+> ```
+> Import from your project:
+> ```html
+> <link href="{{your-project-name}}/css/crispi-css-utilities.css" rel="stylesheet">
+> <link href="{{your-project-name}}/css/your-project-styles.css" rel="stylesheet">
+> ```
 
 ### CSS customizations
 
-> *TODO: Complete the section.*
+By importing your stylesheet after *Crispi CSS Utilities*, you will be able to modify all customs properties 
+using the `:root` pseudo selector. 
+If you import our style sheet after ours, only custom property modifications with a stronger selector 
+will be taken into account (example: `body:root { /*Your custom propertie modifications*/ }`).
+
+> Example: To modify the colors associated with the main color, you can:
+> ```css
+> :root {
+>   --ligth: #25002b;
+>   --dark: #f6dcfa;
+>   --primary: #a800c4;
+>   --secondary: #9bc400;
+>   --tertiary: #0081c4;
+> }
+> ```
+
+With this simple declaration, all the classes of *Crispi CSS Utilities* will be in the colors of your project!  
+In addition to [colors](#colors-variables), you can modify the non-fixed [fonts](#font-variables), 
+[integers](#integer-variables), [sizes](#size-variables) and [times](#time-variables) values 
+to tune your design as precisely as possible.
 
 ## Use in SCSS mode
 
-> *TODO: Complete the section.*
+We recommend that you integrate *Crispi CSS Utilities* into your project in SCSS mode. 
+Thus, you can modify the variables before creating the custom properties, 
+but also use the functions and mixins of the library to enrich and factorize your own code.
+The most experienced users can also create their own versions of *Crispi CSS Utilities* 
+by generating only the classes that interest them, associated with the desired names and values 
+(show: [SCSS customization](#scss-customizations)).
 
-### SCSS scripts
+### SCSS importations
 
-> *TODO: Complete the section.*
+You can import *Crispi CSS Utilities* directly into your SCSS stylesheet.
+Thus, you can both modify the variables used by the libraries, 
+but also use the functions and mixins that it makes available to you.
+
+Import the library (with `@import`), choosing the desired version: `light`, `medium` or `complete`. 
+Functions, mixins and customization are available in all versions.
+
+> Example: To add the complete version to your stylesheet
+> ```scss
+> @import 'node_modules/css-utilities/scss/complete.styles.scss';
+> ```
+
+The library is built into your project and compiled by your scss interpreter.
+So you can both use it in your style sheet, but also in the html page that imports your compiled CSS file.
+
 
 ### SCSS customizations
 
-You can customize your styles in the same way as with the css mode, 
+You can customize your styles in the same way as with the CSS mode, 
 using the custom property. See the part: [CSS customization](#css-customizations).
 
 You can also customize your styles thanks to the scss variables. 
-*Crispi CSS Utilities* scss variables are all set to `!default`, 
+*Crispi CSS Utilities* SCSS variables are all set to `!default`, 
 so you can override them with your own values. 
 For them to be taken into account during compilation, 
 define them before importing the *Crispi CSS Utilities* styles.
@@ -268,7 +321,8 @@ define them before importing the *Crispi CSS Utilities* styles.
 > 
 > @import 'node_modules/ncss-utilities/scss/medium.styles.scss';
 > ```
-Because all non-fixed values inherit from an scss variable marked as `!default`, 
+
+Because all non-fixed values inherit from an SCSS variable marked as `!default`, 
 you can easily deduce all of these variables and their custom properties.
 
 > Example: For non-fixed value `container-xs`  
@@ -292,11 +346,11 @@ So, by overriding the original `$container-xs` variable,
 you are also overriding the associated custom property as well as its reference in the parent list.
 
 Finally, you can use the functions and mixins of *Crispi CSS utilities* 
-to add your own css classes to your final stylesheet.
+to add your own CSS classes to your final stylesheet.
 
-> Example: To create your abbreviated background color classes :  
+> Example: To create your abbreviated background color classes:  
 > ```scss
-> @import 'node_modules/ncss-utilities/scss/tools';
+> @import 'node_modules/css-utilities/scss/tools';
 > 
 > @include classesGenerator(('bkc': background-color), fromListToMap(red, blue));
 > ```
@@ -309,4 +363,50 @@ to add your own css classes to your final stylesheet.
 >   background-color: blue;
 > }
 > ```
->
+
+## Library structure
+
+```markdown
+/crispi-css-utilities
+|-- /src
+|   |-- /css
+|   |   |-- complete.styles.css
+|   |   |-- light.styles.css
+|   |   |-- medium.styles.css
+|   |   |-- styles.css
+|   |
+|   |-- /scss
+|   |   |-- /constants
+|   |   |   |-- _index.scss
+|   |   |   |-- _property-key-pairs.scss
+|   |   |   |-- _property-value-pairs.scss
+|   |   | 
+|   |   |-- /factories
+|   |   |   |-- _css.complete.scss
+|   |   |   |-- _css.light.scss
+|   |   |   |-- _css.medium.scss
+|   |   |
+|   |   |-- /tools
+|   |   |   |-- _functions.scss
+|   |   |   |-- _index.scss
+|   |   |   |-- _mixins.scss
+|   |   |
+|   |   |-- /variables
+|   |   |   |-- _colors.scss
+|   |   |   |-- _fonts.scss
+|   |   |   |-- _index.scss
+|   |   |   |-- _integers.scss
+|   |   |   |-- _sizes.scss
+|   |   |   |-- _times.scss
+|   |   |
+|   |   |-- complete.styles.scss
+|   |   |-- light.styles.scss
+|   |   |-- medium.styles.scss
+|   |   |-- styles.scss
+|   |
+|   |-- index.html
+|
+|-- package.json
+|-- package-lock.json
+|-- README.md
+```
