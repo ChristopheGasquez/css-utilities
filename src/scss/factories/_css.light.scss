@@ -3,6 +3,7 @@
 @import '../tools/functions';
 @import '../tools/mixins';
 @import '../variables/colors';
+@import '../variables/fonts';
 @import '../variables/sizes';
 @import '../variables/times';
 @import '../variables/integers';
@@ -97,7 +98,7 @@
 @include classesGenerator($flex-wrap-key-prop, $flex-wrap-values);
 @include classesGenerator($float-key-prop, $float-values);
 @include classesGenerator($font-key-prop, $font-values);
-//@include classesGenerator($font-family-key-prop, $font-family-values);
+@include classesGenerator($font-family-key-prop, mapCollect($font-family-values, $font-family-list));
 @include classesGenerator($font-size-key-prop, mapCollect($font-size-values, $absolute-em-list, $absolute-px-list, $percent-list));
 //@include classesGenerator($font-size-adjust-key-prop, mapCollect($font-size-adjust-values, $dec-list));
 //@include classesGenerator($font-stretch-key-prop, $font-stretch-values);

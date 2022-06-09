@@ -4,12 +4,22 @@
   "description": "Generator of configurable style rules.",
   "scripts": {
     "clean": "rimraf src/css",
-    "scss:watch": "node-sass src/scss/styles.scss -o src/css && node-sass --watch src/scss/styles.scss -o src/css",
     "scss": "node-sass src/scss/styles.scss -o src/css",
+    "scss:watch": "node-sass src/scss/styles.scss -o src/css && node-sass --watch src/scss/styles.scss -o src/css",
+
+    "build:clean": "rimraf src/css",
     "build:complete": "node-sass src/scss/complete.styles.scss -o src/css",
     "build:light": "node-sass src/scss/light.styles.scss -o src/css",
     "build:medium": "node-sass src/scss/medium.styles.scss -o src/css",
-    "build": "npm run clean && npm run scss && npm run build:complete && npm run build:light && npm run build:medium",
+    "build": "npm run build:clean && npm run scss && npm run build:complete && npm run build:light && npm run build:medium",
+
+    "dist:clean": "rimraf dist && mkdir dist",
+    "dist:index": "cp ./src/index.html ./dist/index.html",
+    "dist:complete": "node-sass src/scss/complete.styles.scss -o dist/css --output-style compressed",
+    "dist:light": "node-sass src/scss/light.styles.scss -o dist/css --output-style compressed",
+    "dist:medium": "node-sass src/scss/medium.styles.scss -o dist/css --output-style compressed",
+    "dist": "npm run dist:clean && npm run dist:index && npm run dist:complete && npm run dist:light && npm run dist:medium",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

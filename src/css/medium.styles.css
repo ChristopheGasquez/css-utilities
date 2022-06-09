@@ -20,6 +20,12 @@
   --shade-900: #3e3e3e; }
 
 :root {
+  --f-primary: hevetica;
+  --f-secondary: verdana;
+  --f-tertiary: arial;
+  --f-families: hevetica, verdana, arial; }
+
+:root {
   --length-05em: 0.5em;
   --length-075em: 0.55em;
   --length-1em: 1em;
@@ -1114,6 +1120,21 @@
 
 .font--inherit {
   font: inherit; }
+
+.font-family--initial {
+  font-family: initial; }
+
+.font-family--inherit {
+  font-family: inherit; }
+
+.font-family--f-primary {
+  font-family: var(--f-primary); }
+
+.font-family--f-secondary {
+  font-family: var(--f-secondary); }
+
+.font-family--f-tertiary {
+  font-family: var(--f-tertiary); }
 
 .font-size--xx-small {
   font-size: xx-small; }
