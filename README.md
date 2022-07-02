@@ -1,6 +1,6 @@
 | Project | Version | Demo | Author | Repository | License |
 |:---:|:----:|:----:|:----:|:----:|:----:|
-| crispi-css-utilities | 1.0.0 | [css-utilities.crispi.app](https://css-utilities.crispi.app) | [Christophe Gasquez](https://www.linkedin.com/in/christophe-gasquez) | [Git Hub](https://github.com/ChristopheGasquez/css-utilities.git) | **ISC** |
+| crispi-css-utilities | 1.0.1 | [css-utilities.crispi.app](https://css-utilities.crispi.app) | [Christophe Gasquez](https://www.linkedin.com/in/christophe-gasquez) | [Git Hub](https://github.com/ChristopheGasquez/css-utilities.git) | **ISC** |
 
 # Crispi CSS Utilities
 
