@@ -1,7 +1,7 @@
 {
   "name": "crispi-css-utilities",
-  "version": "1.0.0",
-  "description": "Generator of configurable style rules.",
+  "version": "1.0.1",
+  "description": "Crispi Css Utilities is a style micro framework that can be used in both SCSS and CSS. It provides classes respecting a naming formalism that can be easily deduced. You can customize the entire library to adapt it to your needs and your designs.",
   "scripts": {
     "clean": "rimraf src/css",
     "scss": "node-sass src/scss/styles.scss -o src/css",
